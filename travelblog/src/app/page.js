@@ -1,13 +1,17 @@
-import Image from "next/image";
-import styles from "./page.module.css";
 import Header from "./components/header";
 import Footer from "./components/footer";
-import Link from "next/link";
+import Main from "./components/main";
+
+// functionality: 
+//
+
+
 
 export default function Home() {
   return (
     <>
       <Header />
+      <Main />
       <Footer />
     </>
   );
