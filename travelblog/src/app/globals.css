@@ -83,8 +83,20 @@ footer {
   height: 40rem;
   width: 45rem;
   border-radius: 10px;
+  overflow: auto;
 }
-
+.elements {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.description {
+  margin: 1rem;
+}
+img {
+  width: 40rem;
+}
 .mainContainer {
   display: flex;
   justify-content: center;

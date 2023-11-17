@@ -20,7 +20,6 @@ export default function Home() {
   // };
   return (
     <>
-      <h1> {travel.title}</h1>
       <Header />
       <Main />
       <Footer />
