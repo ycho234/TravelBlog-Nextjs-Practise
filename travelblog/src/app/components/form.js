@@ -34,7 +34,7 @@ export default function Form() {
   }
 
   return (
-    <div className="main">
+    <div className="main secondary">
       <label for="title">
         Title <input onChange={handleTitle} type="text" />
       </label>

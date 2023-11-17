@@ -102,3 +102,10 @@ img {
   justify-content: center;
   margin-top: 3rem;
 }
+
+.secondary{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center
+}
