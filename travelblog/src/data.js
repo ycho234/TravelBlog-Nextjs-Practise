@@ -1,6 +1,6 @@
 import { v4 as uuidv4 } from "uuid";
 
-travelBlog = [
+export let travelBlog = [
   {
     id: uuidv4(),
     title: "Japan",
