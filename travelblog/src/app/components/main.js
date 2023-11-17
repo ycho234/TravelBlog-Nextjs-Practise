@@ -1,5 +1,8 @@
+"use client";
+
 import travelBlog from "@/data";
-// import { useState } from "react";
+import React, { useState } from "react";
+
 const travel = travelBlog.map((data) => {
   return (
     <div className="elements">
@@ -11,9 +14,12 @@ const travel = travelBlog.map((data) => {
 });
 
 export default function Main() {
+  const [travelData, setTravelData] = useState(travel);
+
+  
   return (
     <div className="mainContainer">
-      <main className="main">{travel}</main>
+      <main className="main">{travelData}</main>
     </div>
   );
 }
