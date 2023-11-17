@@ -1,7 +1,9 @@
 "use client";
 
 import travelBlog from "@/data";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import Form from "./form"
+
 
 const travel = travelBlog.map((data) => {
   return (
