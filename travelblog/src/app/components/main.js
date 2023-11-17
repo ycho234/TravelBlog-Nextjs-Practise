@@ -1,5 +1,5 @@
 import travelBlog from "@/data";
-import { useState } from "react";
+// import { useState } from "react";
 const travel = travelBlog.map((data) => {
   return (
     <div className="elements">

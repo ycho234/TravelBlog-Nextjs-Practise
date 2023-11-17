@@ -11,13 +11,6 @@ import travel from "../app/datatest.json";
 // for each item create the above
 
 export default function Home() {
-  // const [blog, setBlog] = useState([]);
-  // const fetchTodos = () => {
-  //   const response = fetch("../data");
-  //   const data = response.json();
-  //   console.log(data);
-  //   setBlog(data);
-  // };
   return (
     <>
       <Header />
