@@ -1,6 +1,7 @@
+import { defaultConfig } from "next/dist/server/config-shared";
 import { v4 as uuidv4 } from "uuid";
 
-export let travelBlog = [
+const travelBlog = [
   {
     id: uuidv4(),
     title: "Japan",
@@ -82,3 +83,5 @@ export let travelBlog = [
       "New Zealand's stunning natural beauty and outdoor adventures were unparalleled. From hiking in Fiordland National Park to exploring the geothermal wonders in Rotorua, every corner of this country felt like a paradise for nature lovers.",
   },
 ];
+
+export default travelBlog;
