@@ -39,3 +39,26 @@
   --card-rgb: 180, 185, 188;
   --card-border-rgb: 131, 134, 135;
 }
+body{
+margin: 0;
+padding: 0;
+}
+
+.header{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #abc8c0;
+  color: #486572; 
+  font-family: JejuGothic;
+}
+.addPostButton{
+  background-color: #ffffff;
+  padding: 1rem;
+  border: 1px solid #022F40;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #486572;
+  font-weight: bold;
+
+}

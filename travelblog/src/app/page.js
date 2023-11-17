@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <>
       <Header />
-      <Link href="./AddPost">Click</Link>
+      
     </>
   );
 }
