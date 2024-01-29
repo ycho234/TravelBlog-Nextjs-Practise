@@ -52,22 +52,26 @@ body {
   background-color: #abc8c0;
   color: #486572;
   font-family: JejuGothic;
+  font-family: InconsolataFont, monospace;
+  text-shadow: 1px 1px 1px #ffffff;
 }
 .addPostButton {
-  background-color: #ffffff;
+  background-color: #eff6f4;
   padding: 1rem;
-  border: 1px solid #022f40;
-  border-radius: 5px;
+  border: 3px solid #486572;
+  border-radius: 20px;
   text-decoration: none;
+  max-width: max-content;
   color: #486572;
   font-weight: bold;
+  box-shadow: 0.5px 0.5px 0.5px #ffffff;
 }
 
 footer {
   color: #486572;
   background-color: #abc8c0;
-  font-size: 1.5vw;
-  height: 6vw;
+  font-size: 1vw;
+  height: 3vw;
   display: flex;
   position: fixed;
   left: 0;
@@ -76,6 +80,9 @@ footer {
   justify-content: center;
   align-items: center;
   font-family: Inter;
+  justify-content: space-around;
+  font-family: InconsolataFont, monospace;
+  text-shadow: 0.5px 0.5px 0.5px #ffffff;
 }
 
 .main {
@@ -83,7 +90,8 @@ footer {
   height: 40rem;
   width: 45rem;
   border-radius: 10px;
-  overflow: auto;
+  padding-bottom: 2rem;
+  overflow-y: scroll;
 }
 .elements {
   display: flex;
@@ -93,19 +101,85 @@ footer {
 }
 .description {
   margin: 1rem;
+  width: 30rem;
+  font-weight: 450;
+  border-color: #eff6f4;
+  border-width: 1rem;
+  color: #486572;
+}
+.title {
+  color: #486572;
+  text-shadow: 0.5px 0.5px 0.5px #ffffff;
 }
 img {
-  width: 40rem;
+  width: 30rem;
+  border-radius: 1rem;
 }
+
 .mainContainer {
   display: flex;
   justify-content: center;
   margin-top: 3rem;
+  margin-bottom: 5rem;
 }
 
-.secondary{
+.secondary {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  align-items: center
+  align-items: center;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 8px; /* Set the width of the scrollbar */
+}
+
+/* Handle of the scrollbar */
+::-webkit-scrollbar-thumb {
+  background-color: #c4bcae; /* Color of the scrollbar handle */
+  border-radius: 6px; /* Border radius of the scrollbar handle */
+}
+
+/* Track (the area on which the handle moves) */
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1; /* Color of the scrollbar track */
+}
+
+.mainSecondary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  margin-right: 4rem;
+  margin-left: 4rem;
+  background-color: #f6f2ee;
+  height: 20rem;
+  gap: 3rem;
+  border-radius: 2rem;
+}
+
+.label {
+  font-family: InconsolataFont, monospace;
+  font-weight: 400;
+  color: #486572;
+}
+
+.typing {
+  border-radius: 7px;
+  border-width: 2px;
+  border-color: #486572;
+  color: #c4bcae;
+}
+
+.submitButton {
+  background-color: #ffffff;
+  padding: 0.5rem;
+  border: 3px solid #486572;
+  border-radius: 13px;
+  color: #486572;
+  font-weight: bold;
+  box-shadow: 0.5px 0.5px 0.5px #ffffff;
 }

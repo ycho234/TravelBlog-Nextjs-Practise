@@ -22,7 +22,7 @@ export default function Form() {
   }
 
   function newBlog() {
-      const newData = {
+    const newData = {
       id: uuidv4(),
       title: newTitle,
       image: newImage,
@@ -30,22 +30,25 @@ export default function Form() {
     };
 
     setData([...data, newData]);
-    console.log(data)
+    console.log(data);
   }
 
   return (
-    <div className="main secondary">
-      <label for="title">
-        Title <input onChange={handleTitle} type="text" />
+    <div className="mainSecondary">
+      <label for="title" className="label">
+        Title <input onChange={handleTitle} type="text" className="typing" />
       </label>
-      <label for="description">
-        Description <input onChange={handleDescription} type="text" />
+      <label for="description" className="label">
+        Description{" "}
+        <input onChange={handleDescription} type="text" className="typing" />
       </label>
-      <label for="image">
-        Image URL
-        <input onChange={handleImage} type="text" />
+      <label for="image" className="label">
+        Image URL{" "}
+        <input onChange={handleImage} type="text" className="typing" />
       </label>
-      <button onClick={newBlog} type="submit">Submit</button>
+      <button onClick={newBlog} type="submit" className="submitButton">
+        Submit
+      </button>
     </div>
   );
 }
